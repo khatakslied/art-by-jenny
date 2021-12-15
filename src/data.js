@@ -36,18 +36,18 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    image: require("./images/popular/small-orange-pumpkin.png"),
+    image: require("./images/popular/small-orange-pumpkin.png")
   },
   {
     id: 2,
-    image: require("./images/popular/red-stocking-in-hand.png"),
+    image: require("./images/popular/red-stocking-in-hand.png")
   },
   {
     id: 3,
-    image: require("./images/popular/small-gold-pumpkin.png"),
+    image: require("./images/popular/small-gold-pumpkin.png")
   },
   {
     id: 4,
-    image: require("./images/popular/medium-striped-pumpkin.png"),
+    image: require("./images/popular/medium-striped-pumpkin.png")
   }
 ]
