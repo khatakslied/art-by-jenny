@@ -58,7 +58,7 @@ const ImageContainer = styled.div`
     height: 60%;
   }
   flex: 1;
-  margin: 8px;
+  margin: 32px;
 `;
 
 const Image = styled.img`
@@ -68,18 +68,26 @@ const Image = styled.img`
 `;
 
 const InfoContainer = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   flex: 1;
-  margin: 8px;
+  margin: 32px;
 `;
 
 const Title = styled.h2`
+  color: #ECEAEB;
   font-size: 2rem;
   font-weight: normal;
+  text-shadow: 0 0 1px #412D26;
 `;
 
 const Description = styled.p`
   font-weight: lighter;
   margin: 16px 0;
+  text-shadow: 0 0 1px #412D26;
 `;
 
 const Button = styled.button`
@@ -90,6 +98,7 @@ const Button = styled.button`
   background-color: #412D26;
   color: #FEFEFE;
   cursor: pointer;
+  box-shadow: 0 0 1px #412D26;
 `;
 
 

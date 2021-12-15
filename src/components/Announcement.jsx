@@ -8,8 +8,8 @@ const Container = styled.div`
   justify-content: center;
   background: rgb(227,207,183);
   background: linear-gradient(0deg, rgba(227,207,183,1) 0%, rgba(175,129,103,1) 100%);
-  color: #FEFEFE;
-  text-shadow: 0 0 1px #000000;
+  color: #ECEAEB;
+  text-shadow: 0 0 1px #412D26;
 `;
 
 const Announcement = () => {
