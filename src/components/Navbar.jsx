@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingBasketOutlined } from "@material-ui/icons"
 import { Badge } from "@material-ui/core"
+import leaf from "../images/leaf.png"
 
 const Container = styled.div`
-  height: 60px;
+  height: 72px;
   background-color: #ECEAEB;
 `;
 
@@ -18,9 +19,15 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 `;
 
-const Logo = styled.h1`
+const Logo = styled.img`
+  object-fit: contain;
+  width: 48px;
+`;
+
+const LogoText = styled.h1`
   font-weight: normal;
 `;
 
@@ -35,11 +42,12 @@ const SearchContainer = styled.div`
   align-items: center;
   border: 2px solid black;
   padding: 4px;
+  background-color: #FFFFFF;
 `;
 
 const Input = styled.input`
   border: none;
-  background-color: #ECEAEB;
+  background-color: #FFFFFF;
 `;
 
 const Right = styled.div`
@@ -59,7 +67,8 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo>ART by Jenny</Logo>
+          <Logo src={leaf}/>
+          <LogoText>ART by Jenny</LogoText>
         </Left>
         <Center>
           <SearchContainer>

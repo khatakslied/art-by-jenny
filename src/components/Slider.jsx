@@ -57,13 +57,13 @@ const ImageContainer = styled.div`
   @media (max-width: 768px) {
     height: 60%;
   }
-  flex: 1;
+  flex: 2;
   margin: 32px;
 `;
 
 const Image = styled.img`
   object-fit: contain;
-  height: 100%;
+  // height: 100%;
   width: 100%;
 `;
 
