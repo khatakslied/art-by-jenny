@@ -99,6 +99,12 @@ const Button = styled.button`
   color: #FEFEFE;
   cursor: pointer;
   box-shadow: 0 0 1px #412D26;
+  transition: 0.5s;
+
+  &:hover{
+    background-color: #161413;
+    transform: scale(1.1)
+  }
 `;
 
 

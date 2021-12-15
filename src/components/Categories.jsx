@@ -5,7 +5,7 @@ import CategoryItem from './CategoryItem';
 
 const Container = styled.div`
   display: flex;
-  padding: 24px;
+  padding: 56px 24px;
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column;

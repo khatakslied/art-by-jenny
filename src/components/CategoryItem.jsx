@@ -40,6 +40,12 @@ const Button = styled.button`
   color: #111111;
   cursor: pointer;
   box-shadow: 0 0 1px #412D26;
+  transition: 0.5s;
+
+  &:hover{
+    background-color: #E3CFB7;
+    transform: scale(1.1)
+  }
 `;
 
 const CategoryItem = ({item}) => {
