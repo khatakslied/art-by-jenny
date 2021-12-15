@@ -8,6 +8,7 @@ const Container = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
+  border-radius: 50%;
 `;
 const Info = styled.div`
   position: absolute;
@@ -26,7 +27,7 @@ const Title = styled.h2`
   @media (max-width: 768px) {
     font-size: 2rem;
   }
-  font-weight: normal;
+  font-weight: bold;
   text-shadow: 0 0 2px #412D26;
   margin: 8px;
 `;
