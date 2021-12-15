@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight } from '@material-ui/icons';
-import React from 'react';
-import styled from 'styled-components'
+import React, { useState} from 'react';
+import styled from 'styled-components';
+import { slides } from '../data.js';
 
 const Container = styled.div`
   position: relative;
@@ -33,30 +34,42 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   display: flex;
   height: 100%;
-  transform:translateX();
+  transition: 1s;
+  transform:translateX(${props=> props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   width: 100vw;
   height: 100vh;
   align-items: center;
+  justify-content: center;
   background-color: ${props=> props.bkgrd};
 `;
 
 const ImageContainer = styled.div`
+  display: flex;
+  width: 100%;
   height: 100%;
+  @media (max-width: 768px) {
+    height: 60%;
+  }
   flex: 1;
-
+  margin: 8px;
 `;
 
 const Image = styled.img`
-  height: 80%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
-  flex: 2;
-  padding: 56px;
+  flex: 1;
+  margin: 8px;
 `;
 
 const Title = styled.h2`
@@ -81,39 +94,35 @@ const Button = styled.button`
 
 
 const Slider = () => {
-
-  const handleClick = (direction) => {
-
-  }
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (side) => {
+    if(side === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex-1 : 1)
+    } else {
+      setSlideIndex(slideIndex < 1 ? slideIndex+1 : 0)
+    }
+  };
 
   return (
     <Container>
       <Arrow side="left" onClick={() => handleClick("left")}>
         <ArrowLeft />
       </Arrow>
-      <Wrapper>
-        <Slide bkgrd="#C47439">
+      <Wrapper slideIndex={slideIndex}>
+        {slides.map((slide)=>(
+        <Slide bkgrd={slide.bkgrd}>
           <ImageContainer>
-            <Image src="" />
+            <Image src={slide.image} />
           </ImageContainer>
           <InfoContainer>
-            <Title>Product Name</Title>
-            <Description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus!</Description>
+            <Title>{slide.title}</Title>
+            <Description>{slide.description}</Description>
             <Button>Buy Now</Button>
           </InfoContainer>
         </Slide>
-        <Slide bkgrd="#702F1B">
-          <ImageContainer>
-            <Image src="" />
-          </ImageContainer>
-          <InfoContainer>
-            <Title>Product Name</Title>
-            <Description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus!</Description>
-            <Button>Buy Now</Button>
-          </InfoContainer>
-        </Slide>
+        ))}
       </Wrapper>
-      <Arrow side="right" onClick={() => handleClick("right")>
+      <Arrow side="right" onClick={() => handleClick("right")}>
         <ArrowRight />
       </Arrow>
     </Container>
