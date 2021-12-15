@@ -79,9 +79,9 @@ const InfoContainer = styled.div`
 
 const Title = styled.h2`
   color: #ECEAEB;
-  font-size: 2rem;
-  font-weight: normal;
-  text-shadow: 0 0 1px #412D26;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 2px #412D26;
 `;
 
 const Description = styled.p`
@@ -94,7 +94,7 @@ const Button = styled.button`
   border: none;
   border-radius: 1px;
   padding: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #412D26;
   color: #FEFEFE;
   cursor: pointer;

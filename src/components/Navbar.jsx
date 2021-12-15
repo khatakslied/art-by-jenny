@@ -29,6 +29,9 @@ const Logo = styled.img`
 
 const LogoText = styled.h1`
   font-weight: normal;
+  margin: 8px;
+  color: #111111;
+  text-shadow: 0 0 1px #FFFFFF;
 `;
 
 const Center = styled.div`
@@ -40,7 +43,8 @@ const Center = styled.div`
 const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid #111111;
+  border-radius: 1px;
   padding: 4px;
   background-color: #FFFFFF;
 `;
@@ -60,6 +64,7 @@ const Right = styled.div`
 const MenuItem = styled.div`
   cursor: pointer;
   margin: 8px;
+  text-shadow: 0 0 1px #FFFFFF;
 `;
 
 const Navbar = () => {

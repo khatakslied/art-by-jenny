@@ -4,7 +4,7 @@ export const slides = [
     image: require("./images/pumpkins.png"),
     title: "OPENING SALE",
     description: "Shop now to get 5% of ALL items.",
-    bkgrd: "#C47439"
+    bkgrd: "#EDCFBF"
   },
   {
     id: 2,
@@ -30,5 +30,24 @@ export const categories = [
     id: 3,
     image: require("./images/categories/thechristmastree.png"),
     title: "The Christmas Tree"
+  }
+]
+
+export const popularProducts = [
+  {
+    id: 1,
+    image: require("./images/popular/small-orange-pumpkin.png"),
   },
+  {
+    id: 2,
+    image: require("./images/popular/red-stocking-in-hand.png"),
+  },
+  {
+    id: 3,
+    image: require("./images/popular/small-gold-pumpkin.png"),
+  },
+  {
+    id: 4,
+    image: require("./images/popular/medium-striped-pumpkin.png"),
+  }
 ]
