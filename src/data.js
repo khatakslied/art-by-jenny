@@ -1,14 +1,14 @@
 export const slides = [
   {
     id: 1,
-    image: require("./images/pumpkins.png"),
+    image: require("./images/slider/pumpkins.png"),
     title: "OPENING SALE",
     description: "Shop now to get 5% of ALL items.",
     bkgrd: "#EDCFBF"
   },
   {
     id: 2,
-    image: require("./images/acorns.png"),
+    image: require("./images/slider/acorns.png"),
     title: "NEW ITEMS",
     description: "Check out my latest work.",
     bkgrd: "#E3CFB7"
@@ -19,17 +19,17 @@ export const categories = [
   {
     id: 1,
     image: require("./images/categories/thepumpkinpatch.png"),
-    title: "The Pumpkin Patch"
+    title: require("./images/titles/thepumpkinpatch.png"),
   },
   {
     id: 2,
     image: require("./images/categories/thevelvetforest.png"),
-    title: "The Velvet Forest"
+    title: require("./images/titles/thevelvetforest.png"),
   },
   {
     id: 3,
     image: require("./images/categories/thechristmastree.png"),
-    title: "The Christmas Tree"
+    title: require("./images/titles/thechristmastree.png"),
   }
 ]
 

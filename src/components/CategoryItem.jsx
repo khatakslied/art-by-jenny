@@ -6,10 +6,13 @@ const Container = styled.div`
   flex: 1;
   margin: 4px;
 `;
+
 const Image = styled.img`
   width: 100%;
   border-radius: 50%;
+  transition: 0.5s;
 `;
+
 const Info = styled.div`
   position: absolute;
   display: flex;
@@ -20,42 +23,24 @@ const Info = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
-`;
-const Title = styled.h2`
-  color: #ECEAEB;
-  font-size: 1.6rem;
-  @media (max-width: 768px) {
-    font-size: 2rem;
+  z-index: 2;
+  &:hover + ${Image}{
+    filter: brightness(50%);
   }
-  font-weight: bold;
-  text-shadow: 0 0 2px #412D26;
-  margin: 8px;
 `;
-const Button = styled.button`
-  border: none;
-  border-radius: 1px;
-  padding: 8px;
-  font-size: 1.2rem;
-  background-color: #ECEAEB;
-  color: #111111;
-  cursor: pointer;
-  box-shadow: 0 0 1px #412D26;
-  transition: 0.5s;
 
-  &:hover{
-    background-color: #E3CFB7;
-    transform: scale(1.1)
-  }
+const Title = styled.img`
+    width: 90%;
+    z-index: 3;
 `;
 
 const CategoryItem = ({item}) => {
   return (
     <Container>
-      <Image src={item.image}/>
       <Info>
-        <Title>{item.title}</Title>
-        <Button>See More</Button>
+        <Title src={item.title} />
       </Info>
+      <Image src={item.image}/>
     </Container>
   );
 };

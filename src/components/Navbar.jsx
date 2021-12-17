@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingBasketOutlined } from "@material-ui/icons"
 import { Badge } from "@material-ui/core"
-import leaf from "../images/leaf.png"
+import artbyjennytitle from "../images/titles/artbyjennytitle.png"
 
 const Container = styled.div`
   height: 72px;
@@ -23,15 +23,8 @@ const Left = styled.div`
 `;
 
 const Logo = styled.img`
-  object-fit: contain;
-  width: 48px;
-`;
-
-const LogoText = styled.h1`
-  font-weight: normal;
-  margin: 8px;
-  color: #111111;
-  text-shadow: 0 0 1px #FFFFFF;
+  // object-fit: contain;
+  // height: 100%;
 `;
 
 const Center = styled.div`
@@ -72,8 +65,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo src={leaf}/>
-          <LogoText>ART by Jenny</LogoText>
+          <Logo src={artbyjennytitle}/>
         </Left>
         <Center>
           <SearchContainer>
