@@ -6,7 +6,7 @@ import artbyjennytitle from "../images/titles/artbyjennytitle.png"
 
 const Container = styled.div`
   height: 72px;
-  background-color: #ECEAEB;
+  background-color: #412D26;
 `;
 
 const Wrapper = styled.div`
@@ -24,7 +24,7 @@ const Left = styled.div`
 
 const Logo = styled.img`
   // object-fit: contain;
-  // height: 100%;
+  height: 60px;
 `;
 
 const Center = styled.div`
