@@ -3,7 +3,7 @@ export const slides = [
     id: 1,
     image: require("./images/slider/pumpkins.png"),
     title: "OPENING SALE",
-    description: "Shop now to get 5% of ALL items.",
+    description: "Shop now to get 5% off ALL items.",
     bkgrd: "#EDCFBF"
   },
   {

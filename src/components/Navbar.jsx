@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Search, ShoppingBasketOutlined } from "@material-ui/icons"
-import { Badge } from "@material-ui/core"
-import artbyjennytitle from "../images/titles/artbyjennytitle.png"
+import React from 'react';
+import styled from 'styled-components';
+import { Search, ShoppingBasketOutlined } from "@material-ui/icons";
+import { Badge } from "@material-ui/core";
+import artbyjennytitle from "../images/titles/artbyjennytitle.png";
 
 const Container = styled.div`
   background-color: #412D26;
