@@ -8,15 +8,35 @@ const Container = styled.div`
 
 `;
 
-const Cart = () => {
+const Wrapper = styled.div`
+  padding: 24px;
+`;
+
+const Title = styled.h2`
+  text-align: center;
+`;
+
+const Top = styled.div`
+
+`;
+
+const Bottom = styled.div`
+
+`;
+
+const Basket = () => {
   return (
     <Container>
       <Announcement />
       <Navbar />
-      cart
+      <Wrapper>
+        <Title>Basket</Title>
+        <Top></Top>
+        <Bottom></Bottom>
+      </Wrapper>
       <Footer />
     </Container>
   );
 };
 
-export default Cart;
+export default Basket;

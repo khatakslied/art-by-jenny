@@ -3,7 +3,7 @@ import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Cart from "./pages/Cart";
+import Basket from "./pages/Basket";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       {/* <Product /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      <Cart />
+      <Basket />
     </div>
   );
 }
