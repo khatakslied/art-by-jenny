@@ -63,7 +63,6 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   object-fit: contain;
-  // height: 100%;
   width: 100%;
 `;
 

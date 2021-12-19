@@ -43,7 +43,7 @@ const ProductList = () => {
       <Navbar />
       <Title>Test</Title>
       <FilterContainer>
-        <Filter><FilterText>Filter Products:</FilterText>
+        <Filter><FilterText>Filter Items:</FilterText>
           <Select>
             <Option disabled selected>Colour</Option>
             <Option>Orange</Option>
@@ -60,12 +60,11 @@ const ProductList = () => {
             <Option>XS</Option>
           </Select>
         </Filter>
-        <Filter><FilterText>Sort Products:</FilterText>
+        <Filter><FilterText>Sort Items:</FilterText>
           <Select>
             <Option selected>Newest</Option>
             <Option>Price (asc)</Option>
             <Option>Price (desc)</Option>
-
           </Select>
         </Filter>
       </FilterContainer>
