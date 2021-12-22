@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Announcement from '../components/Announcement';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import testImage from '../images/popular/medium-striped-pumpkin.png'
 import { Add, Remove } from '@material-ui/icons';
+import testImage from '../images/popular/medium-striped-pumpkin.png'
 
 const Container = styled.div`
 `;

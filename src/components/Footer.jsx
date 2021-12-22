@@ -83,7 +83,7 @@ const Footer = () => {
         <Title>Useful Links</Title>
         <List>
           <ListItem>Contact</ListItem>
-          <ListItem>Checkout</ListItem>
+          <ListItem>Basket</ListItem>
           <ListItem>FAQs</ListItem>
           <ListItem>Legal</ListItem>
         </List>
